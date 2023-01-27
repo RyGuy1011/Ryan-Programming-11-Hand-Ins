@@ -102,8 +102,8 @@ public class Program {
                                 System.out.print(SavedWord.substring(2, SavedWord.length() - 2) + SavedWord.substring(0, 2) + " ");
                                 storage = storage + SavedWord.substring(2, SavedWord.length() - 2) + SavedWord.substring(0, 2) + " ";
                             }else if (SavedWord.length()==3) {
-                                System.out.print(SavedWord.substring(0,1));
-                                storage = storage + SavedWord.substring(0,1);
+                                System.out.print(SavedWord.substring(0,1)+" ");
+                                storage = storage + SavedWord.substring(0,1)+" ";
                                 //Creates exception for when words are less than 3 characters as it would not be encrypted and would only create save errors
                             }else if (Word2.length()<3){
                                     System.out.println("Invalid Input, input is not decrypted. Saved data is cleared.");
@@ -129,8 +129,8 @@ public class Program {
                     System.out.print(Word2.substring(2, Word2.length() - 2) + Word2.substring(0, 2) + " ");
                     SavedOutput = SavedOutput + Word2.substring(2, Word2.length() - 2) + Word2.substring(0, 2) + " ";
                 }else if (Word2.length() == 3) {
-                    System.out.print(Word2.substring(0, 1));
-                    SavedOutput = SavedOutput + Word2.substring(0, 1);
+                    System.out.print(Word2.substring(0, 1)+" ");
+                    SavedOutput = SavedOutput + Word2.substring(0, 1)+" ";
                 }else if (Word2.length()<3){
                     System.out.println("Invalid Input, input is not decrypted. Saved data is cleared.");
                     SavedStatus = "No saves";
